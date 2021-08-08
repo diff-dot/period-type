@@ -18,7 +18,7 @@ export class PeriodType extends Enum {
   static readonly TOTAL = new PeriodType(11, 'total');
   static readonly RECENTLY = new PeriodType(10, 'recently'); // 최근 24시간
 
-  get interval(): string {
+  get intervalString(): string {
     switch (this) {
       case PeriodType.HOURLY:
         return '1h';
